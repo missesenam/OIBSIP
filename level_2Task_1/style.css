@@ -2,6 +2,9 @@
     --orange: #ff9f0c;
     --gray: #a5a5a5;
     --gray1: #505151;
+    --orangelight: #f7ad3e;
+    /* --graylight: #505151;
+    --gray1light:  #a5a5a5; */
 }
 body{
     display: flex;
@@ -24,6 +27,12 @@ body{
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
+    position: relative;
+}
+#inputfield img{
+    position: absolute;
+    top: 20px;
+    left: 20px;
 }
 #inputfield input{
     background-color: black;

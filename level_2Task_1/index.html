@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>calculator</title>
+</head>
+<body>
+    <!-- calc container -->
+     <div id="calc_container">
+        <!-- input and result section -->
+         <div id="inputfield">
+            <input type="text" disabled>
+            <input type="text" disabled>
+            <img src="./icon/sun-svgrepo-com.svg" alt="" width="30px" onclick="changeicon()">
+         </div>
+         <!-- keyboard -->
+          <div id="value-cont">
+            <span onclick="valueinput('%')" class="value-input topthree">%</span>
+            <span onclick="valueinput('*')"  class="value-input topthree">x</span>
+            <span onclick="valueinput('/')"  class="value-input topthree">/</span>
+            <span onclick="deleteval()"  class="value-input side-col">del</span>
+
+            <span onclick="valueinput('7')" class="value-input">7</span>
+            <span onclick="valueinput('8')" class="value-input">8</span>
+            <span onclick="valueinput('9')" class="value-input">9</span>
+            <span onclick="valueinput('-')" class="value-input side-col">-</span>
+
+            <span onclick="valueinput('4')" class="value-input">4</span>
+            <span onclick="valueinput('5')" class="value-input">5</span>
+            <span onclick="valueinput('6')" class="value-input">6</span>
+            <span onclick="valueinput('+')" class="value-input side-col">+</span>
+
+            <span onclick="valueinput('1')" class="value-input">1</span>
+            <span onclick="valueinput('2')" class="value-input">2</span>
+            <span onclick="valueinput('3')" class="value-input">3</span>
+            <span onclick="res()" class="value-input side-col">=</span>
+
+            <span onclick="valueinput('0')" class="value-input" id="spantwo">0</span>
+            <span onclick="clearall()" class="value-input">AC</span>
+            <span onclick="valueinput('.')" class="value-input side-col">.</span>
+          </div>
+     </div>
+     <script src="calculator.js"></script>
+</body>
+</html>
