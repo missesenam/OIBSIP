@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section>
+        <div class="title-container">
+            <h1 class="title">To Do</h1>
+            <button class="add-btn"  id="addmore">+</button>
+        </div>
+
+        <div class="todo-tasks">
+            <!-- Appending tasks -->
+            <div id="appending-tasks">
+                <h1>Appending Tasks</h1>
+            </div>
+            <!-- Completed tasks -->
+            <div id="completed-tasks">
+                <h1>Completed Tasks</h1>
+            </div>
+        </div>
+
+        <!-- Modal for Adding Task -->
+        <div id="taskModal" class="modal">
+            <div class="modal-content" id="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Add New Task</h2>
+                    <span class="modal-close" id="closeModal">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <input type="text" id="newTaskInput" class="modal-input" placeholder="Enter task here..." />
+                </div>
+                <div class="modal-footer">
+                    <button class="modal-submit" id="addTaskBtn">Add Task</button>
+                </div>
+            </div>
+        </div>  
+    </section>
+    <script src="toDoApp.js"></script>
+</body>
+</html>
