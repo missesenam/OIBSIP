@@ -80,6 +80,7 @@ addTaskBtn.addEventListener('click', ()=>{
     // theEnd
     TaskModal.style.display = 'none'
     addNewTaskInput.value = ''
+    saveData()
     /**
      * 
      * mark task as complete
@@ -101,6 +102,8 @@ addTaskBtn.addEventListener('click', ()=>{
         // Change the click event to mark as incomplete
         button.removeEventListener('click', markAsComplete);
         button.addEventListener('click', markAsincomplete)
+        saveData()
+
     }
             /**
              * 
@@ -128,9 +131,18 @@ addTaskBtn.addEventListener('click', ()=>{
             button.removeEventListener('click', markAsincomplete)
 
             button.addEventListener('click', markAsComplete)
+            saveData()
         }
     button.addEventListener('click', markAsComplete)
     } else{
         return
     }
 })
+
+function saveData(){
+    localStorage.setItem('data', todoList.innerHtml)
+}
+function showlist(){
+    todoList.innerHtml = localStorage.getItem('data')
+}
+showlist()
