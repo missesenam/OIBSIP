@@ -60,8 +60,9 @@ addTaskBtn.addEventListener('click', ()=>{
         // hours
         const hours = now.getHours();   
         const minutes = now.getMinutes(); 
-        // const time = hours + minutes
+        const time = hours + minutes
         // Format hours to 12-hour format and determine AM/PM
+        
         const isAM = hours < 12;
         const formattedHours = (hours % 12) || 12;
         const formattedMinutes = minutes < 10 ? '0' + minutes : minutes;

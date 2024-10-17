@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f4f8;
+}
+section{
+    border: 1px solid #ccc;
+    padding: 30px;
+    width: 50%;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+h1{
+    margin: 20px 0;
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+}
+form{
+    width: 100%;
+}
+form div{
+    width: 100%;
+    margin-bottom: 20px;
+}
+label{
+    display: block;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    color: #666;
+}
+input{
+    padding: 12px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+button{
+    padding: 12px;
+    border-radius: 100px;
+    width: 100%;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #0056b3;
+}
+p{
+    text-align: center;
+    color: #555;
+}
+p a{
+    color: #007bff;
+    text-decoration: none;
+}
+p a:hover{
+    text-decoration: underline;
+}
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            section {
+                width: 90%;
+            }
+            h1 {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            section {
+                width: 95%;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
